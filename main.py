@@ -7,15 +7,12 @@ from aiogram.filters import Command
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import ContentType
 from googletrans import Translator
+from config import API_TOKEN, WEATHER_API_KEY
 
 CITY_NAME = 'Брянск'
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
-
-# Замените эти заполнители на ваши фактические токены
-API_TOKEN = '8001285306:AAG9aTxJNrmgtFntvJUjgko5oaqwMwNbBnc'
-WEATHER_API_KEY = '3105ef340f23778c70759c04871ff297'
 
 # Создаём экземпляры Bot и Dispatcher
 bot = Bot(token=API_TOKEN)
