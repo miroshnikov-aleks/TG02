@@ -1,7 +1,7 @@
 import logging
 import os
 import requests
-import asyncio # Добавили импорт asyncio
+import asyncio
 from aiogram import Bot, Dispatcher, Router, types
 from aiogram.filters import Command
 from aiogram.fsm.storage.memory import MemoryStorage
